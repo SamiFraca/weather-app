@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'clouds': 'url(/clouds.jpeg)',
+        'sky': 'url(/sky.jpeg)'
       },
     },
   },
