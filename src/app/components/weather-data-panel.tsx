@@ -1,8 +1,11 @@
-import { LocationSearchInput } from "./location-search-input";
-export const WeatherDataPanel = () => {
+import React from "react";
+import { GeoLocationWrapper } from "@/app/components/geo-location-wrapper";
+import { WeatherCityData } from "@/app/components/weather-city-data";
+export const WeatherDataPanel: React.FC = () => {
   return (
-    <div className="flex flex-col gap-4 justify-start items-start">
-        <LocationSearchInput />
+    <div className="flex justify-center w-full h-full ">
+      <GeoLocationWrapper />
+      <WeatherCityData />
     </div>
   );
 };
